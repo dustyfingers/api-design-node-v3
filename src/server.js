@@ -12,13 +12,20 @@ app.use(json())
 app.use(urlencoded({ extended: true }))
 app.use(morgan('dev'))
 
-app.get('/', (req, res) => {
+const logger = (req, res, next) => {
+  const { headers, body } = req
+  console.log('logging\n')
+  console.log(headers)
+  console.log(body)
+  next()
+}
+
+app.get('/', logger, (req, res) => {
   res.send({ message: 'Hello world route!' })
 })
 
-app.post('/', (req, res) => {
-  console.log(req.body)
-  res.send({ message: '200 oll klear' })
+app.post('/', logger, (req, res) => {
+  res.send(req.body)
 })
 
 export const start = () => {
