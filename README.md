@@ -2,6 +2,7 @@
 > Scott Moss & Frontend Masters
 
 - [Resources](#resources)
+- [Requirements](#requirements)
 - [Course](#course)
 - [Exercises](#excercises)
   - [Hello world Express](#hello-world-express)
@@ -17,10 +18,22 @@
 * [Express](https://expressjs.com/)
 * [MongoDB](https://www.mongodb.com/)
 
+## Suggested Tools
+The following are suggested to be installed on your machine before beginning the course
+* [VSCode](https://code.visualstudio.com/)
+* [Nodejs](https://nodejs.org/en/)
+* [Yarn](https://yarnpkg.com/lang/en/docs/install/)
+* [MongoDB](https://docs.mongodb.com/manual/administration/install-community/)
+* [Insomnia](https://insomnia.rest/)
+* [Nodemon](https://nodemon.io/)
+
 ## Course
 This course has two parts, slides and excercises. The slides describe the excerices in detail. Each excercise has a starting branch and solution branch. Example `lesson-1` and `lesson-1-solution`.
 ## Exercises
 ### Hello world Express
+
+Note: Before running the tests for the exercise, ensure that mongoDB is running. Please run `mongo` in a new terminal.
+
 * branch - `lesson-1`
 
 In this lesson you'll be creating a simple Express based API in node, just to get your feet wet.
@@ -73,4 +86,4 @@ In this exercise you'll be locking down our API using JWT's.
 - [ ] ensure all tests pass by running test command
 
 ### Testing
-THe other resources don't have any test, go ahead and write some!
+The other resources don't have any test, go ahead and write some!
